@@ -61,9 +61,7 @@ public class Controller implements Initializable{
     		
     		return;
     	}
-    	   	
-    	//get everything to split
-    	
+ 
     	if(!empty.equals("len") && !lenStr.contains("\\.")){	
 			try{
 				if(Float.valueOf(lenStr)==null){
