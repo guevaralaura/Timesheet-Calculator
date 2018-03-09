@@ -1,86 +1,47 @@
-# Timesheet Helper
+# Timesheet Calculator
 
-This program is a simple Python script that parses different websites to finds the best exchange rate in the Lower Mainland area for a provided currency code 
-
-## Exchange Rates Data References
-* [VBCE](https://www.vbce.ca/rates)
-* [The Bank of Nova Scotia](http://www.scotiabank.com/ca/en/0,,1118,00.html)
-* [Kingmark Currency Exchange](http://www.kingmark.ca/exchange-rates)
-* [Happy Currency Exchange](http://www.happycurrency.com/rates)
-* [Charlie's Currency Exchange](http://www.charliescurrency.ca/rates.html)
+JavaFX Application that calculates billable hours (unpaid 30 minute lunch), starting time, or leaving time. The user interface provides three empty fields from which two are mandatory. It calculates the result for the third field using the given information.
 
 ## Getting Started
 
 
 Clone the repository in your local machine:
 
-`$ git clone git@github.com:lauraguevara97/Best_Rate_Finder.git`
+`$ git clone git@github.com:lauraguevara97/Timesheet-Calculator.git`
 
 ## Prerequisites
 
-### Python 3
+### JRE 1.8 
 
-Install Python in Linux with:
-
-`$ sudo apt-get install python3`
-
-For other operating systems follow the instructions [here](https://python.org/downloads).
-
-### Extra Libraries
-
-The libraries used in this project are:
-
-* Pandas
-* Elemen Tree XML
-* Requests
-* OpenPyXL 
-
-To install all the libraries run the setup script:
-
-`$ ./install_requirements.sh`
-
-If you are not using a Linux environment, use the commands from [here](install_requirements.sh).
+Install JRE 1.8 or higher [here](http://www.java.com/download)
 
 After this step we can assume that all the libraries required by the program will be installed in your local machine.
 
 ## Running The Program
-run the currency.py program
 
-`$ python currency.py <currency code>`
+### JAR File
 
-### Input
+The JAR file is located [here](timesheet_calculator.jar)
 
-The predict_weather.py program takes in a `currency code` as a command line argument.
-Currency code can be any of the following:
-* USD
-* AUD
-* GBP
-* CHF
-* COP 
-* EUR
-* JPY
-* NZD
-* ZAR
+To run the file from the Terminal use:
 
-### Output
+`$ java -jar timesheet_calculator.jar `
 
-The output will be an excel file named `output.xlsx` (located in the project directory) containing four sheets: 
-1. Currency code Buys: Data for given currency code
-2. Buys: Buying data for all currency codes
-3. Sells: Selling data for all currency codes
-4. Best Buys: Place that buys currency highest
+### Using IDE
 
-## Example
+Requires installation of JDK 1.8
 
-To see a simple example use this command:
+Steps to import project into [IntelliJ](https://www.jetbrains.com/idea/download/):
+1. Open IntelliJ and select 'Import project'
+2. Go to Timesheet-Calculator directory
+3. Select 1.8 JDK
 
-`$ python currency.py USD`
-
-A new file named output.xlsx is created in project directory. Use Excel to view the data
+## GUI Example
+![alt text](Resources/screenshot.jpg)
 
 ## Version Control
 
-GitHub was used to track all modifications and new implementations. For the full history, see the [commits on this repository](https://github.com/lauraguevara97/Best_Rate_Finder/commits/master).
+GitHub was used to track all modifications and new implementations. For the full history, see the [commits on this repository](https://github.com/lauraguevara97/Timesheet-Calculator/commits/master).
 
 ## Authors
 
@@ -88,4 +49,4 @@ GitHub was used to track all modifications and new implementations. For the full
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for details.
